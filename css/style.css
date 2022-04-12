@@ -23,6 +23,9 @@ h6 {
   color: #1f1f25;
   line-height: 1.4;
 }
+a {
+  text-decoration: none !important;
+}
 .txt__center {
   text-align: center;
 }
@@ -57,7 +60,71 @@ h6 {
 .mgb-20 {
   margin-bottom: 20px;
 }
+.seemorebtn .btn_bg {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.seemorebtn:hover .btn_bg {
+  color: #fd4766;
+  background: transparent;
+}
+/* header */
+header {
+  position: absolute;
+  z-index: 1;
+}
+.btn_bg.buynow {
+  background: transparent;
+  border: 2px solid hsl(0deg 0% 100% / 20%);
+}
+.seemorebtn:hover .btn_bg.buynow {
+  color: #ffffff;
+  background: #fd4766;
+}
 
+/* Carousel */
+.carousel__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel__wrap .carousel__title {
+  padding-top: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel__wrap .carousel__title h1 {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 900;
+}
+.carousel__wrap .carousel__title p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.slick-dots{
+  bottom: 60px;
+}
+.slick-prev {
+  left: 50px;
+}
+.slick-next {
+  right: 50px;
+}
 /* project */
 .project__content {
   background-image: url("../img/bg-image-3.jpg");
@@ -128,10 +195,9 @@ h6 {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
-  text-decoration: none;
 }
 .text__wrapper .text__title .text__mgb h4 a {
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 600;
 }
 .item__text .text__wrapper .text__title {
@@ -219,6 +285,8 @@ h6 {
   border: 1px solid #e6e6e6;
   border-radius: 50em;
   margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
 }
 .nav.nav-pills li a {
   font-weight: 600;
@@ -227,7 +295,6 @@ h6 {
 
 .nav.nav-pills .nav-item .nav-link {
   border-radius: 30px;
-  padding: 10px 30px;
 }
 .nav-item .nav-link.active {
   background-color: #fd4766 !important;
@@ -239,3 +306,15 @@ h6 {
 }
 
 /* Latest News */
+.hidden__button.btn {
+  background-color: transparent;
+  border: 2px solid hsl(0deg 0% 100% / 20%);
+}
+.hidden__button.btn a {
+  color: #ffffff;
+}
+
+.text__hover:hover .hidden__button {
+  background-color: #fd4766;
+  border: 2px solid #fd4766;
+}
