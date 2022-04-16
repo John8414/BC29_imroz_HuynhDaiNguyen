@@ -743,3 +743,30 @@ a.a_after.ahover:hover::after {
   transform: translateY(-5px);
   color: #ffffff;
 }
+/* backtotop */
+
+.backtotop {
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  color:#fd4766 !important;
+  border: solid 1px #fd4766;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  visibility: 1;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}
